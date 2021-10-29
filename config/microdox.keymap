@@ -30,26 +30,25 @@
 // |BTCLR| BT3 | ESC |  ~   |     |   | TAB | HOME |  UP  | END | DEL  |
 // | BT1 | BT4 | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
 // | BT2 | BT5 |     |      |     |   |  \  | ENT  |      |     |      |
-//             |     |      |     |   |     |      |      |
+//             |     |      |     |   |     | TAB  |      |
                         bindings = <
    &bt BT_CLR   &bt BT_SEL 3     &kp ESC  &kp TILDE &trans     &kp TAB  &kp HOME &kp UP   &kp END   &kp DEL
    &bt BT_SEL 0 &bt BT_SEL 4 &kp RALT &kp LCTRL &mo 3      &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
    &bt BT_SEL 1 &bt BT_SEL 5      &trans   &trans    &trans     &kp BSLH &kp RET  &trans   &trans    &trans
-                            &trans   &trans    &trans     &trans   &trans   &trans
+                            &trans   &trans    &trans     &trans   &kp TAB   &trans
                         >;
                 };
 
                 sym_layer {
 // -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |
+// |  !  |  @  |  #  |  $  |  %  |   | BT1 | BT2 | BT3 | BT4 | BT5 |
+// |     |     |     |     |     |   |BTCLR|  =  |  {  |  }  | "|" |
 // |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+//             | GUI | B-T | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
-   &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE
-   &trans    &trans    &trans    &trans    &trans      &trans    &trans    &trans          &trans   &kp BSLH
-                       &kp LGUI  &trans    &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+   &trans    &trans    &trans    &trans    &trans     &bt BT_CLR    &trans    &trans          &trans   &kp BSLH
+                       &kp LGUI  &kp LS(TAB)    &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
 
