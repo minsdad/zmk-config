@@ -36,27 +36,27 @@
             bindings = <&kp LC(W)>;
         };
         combo_CapsLock {
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             key-positions = <10 11>;
             bindings = <&kp CAPS>;
         };
         combo_Insert {
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             key-positions = <8 9>;
             bindings = <&kp INS>;
         };
         combo_leftchange {
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             key-positions = <12 13>;
             bindings = <&kp LC(LG(LEFT))>;
         };
         combo_rightchange {
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             key-positions = <16 17>;
             bindings = <&kp LC(LG(RIGHT))>;
         };
         combo_winTAB {
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             key-positions = <14 15>;
             bindings = <&kp LG(TAB)>;
         };
@@ -66,12 +66,12 @@
             bindings = <&kp LG(E)>;
         };
         combo_undo {
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             key-positions = <23 24>;
             bindings = <&kp K_UNDO>;
         };
         combo_redo {
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             key-positions = <25 26>;
             bindings = <&kp K_REDO>;
         };
