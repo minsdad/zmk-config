@@ -40,6 +40,41 @@
             key-positions = <16 17>;
             bindings = <&kp LC(LG(RIGHT))>;
         };
+        combo_winTAB {
+            timeout-ms = <80>;
+            key-positions = <14 15>;
+            bindings = <&kp LG(TAB)>;
+        };
+        combo_BT1 {
+            timeout-ms = <80>;
+            key-positions = <5 29>;
+            bindings = <&bt BT_SEL 0>;
+        };
+        combo_BT2 {
+            timeout-ms = <80>;
+            key-positions = <6 29>;
+            bindings = <&bt BT_SEL 1>;
+        };
+        combo_BT3 {
+            timeout-ms = <80>;
+            key-positions = <7 29>;
+            bindings = <&bt BT_SEL 2>;
+        };
+        combo_BT4 {
+            timeout-ms = <80>;
+            key-positions = <8 29>;
+            bindings = <&bt BT_SEL 3>;
+        };
+        combo_BT5 {
+            timeout-ms = <80>;
+            key-positions = <9 29>;
+            bindings = <&bt BT_SEL 4>;
+        };
+        combo_BTclr {
+            timeout-ms = <80>;
+            key-positions = <15 29>;
+            bindings = <&bt BT_CLR>;
+        };
     };
 };
 
@@ -55,21 +90,21 @@
 //             | NUM | NAV | BKSP |   | SPC | SYM  | FUN |
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
-   &mt LCTRL A &mt LGUI S &mt LALT D &mt LSHIFT F &kp G   &kp H &mt RSHIFT J  &mt LALT K     &mt RGUI L   &mt RCTRL RET
+   &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G   &kp H &mt LSHIFT J  &mt LCTRL K     &mt LALT L   &mt LGUI RET
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
           &mo 3 &mo 1 &kp BSPC &kp SPACE &mo 2 &mo 4
                         >;
                 };
                 nav_layer {
 // -----------------------------------------------------------------------------------------
-// |BTCLR| BT3 | ESC |  ~   |     |   | DEL | HOME |  UP  | END | DEL  |
-// | BT1 | BT4 | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
-// | BT2 | BT5 |     |      |     |   |  \  | ENT  |      |     |      |
+// |alt-Q|alt-W|alt-E|alt-R|alt-T|   | DEL | HOME |  UP  | END | PGUP |
+// |alt-A|alt-S|alt-D|alt-F|alt-G|   |  /  | LEFT | DOWN | RGT | PGDN |
+// |alt-Z|alt-X|alt-C|alt-V|alt-B|   |  \  | ENT  |      |     |      |
 //             |     |      |     |   | KOR | TAB  | HANJA|
                         bindings = <
-   &bt BT_CLR   &bt BT_SEL 3     &kp ESC  &kp TILDE &trans     &kp DEL  &kp HOME &kp UP   &kp END   &kp DEL
-   &bt BT_SEL 0 &bt BT_SEL 4 &kp RALT &kp LCTRL &mo 3      &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
-   &bt BT_SEL 1 &bt BT_SEL 5      &trans   &trans    &trans     &kp BSLH &kp RET  &trans   &trans    &trans
+   &kp LA(Q)    &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)      &kp DEL  &kp HOME &kp UP   &kp END   &kp DEL
+   &kp LA(A)    &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)      &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
+   &kp LA(Z)    &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)      &kp BSLH &kp RET  &trans   &trans    &trans
                             &trans   &trans    &trans     &kp LANG_HANGEUL   &kp TAB   &kp LANG_HANJA
                         >;
                 };
@@ -79,7 +114,7 @@
 // |  !  |  @  |  #  |  $  |  %  |   | BT1 | BT2 | BT3 | BT4 | BT5 |
 // |     |     |     |     |     |   |BTCLR|  =  |  {  |  }  | "|" |
 // |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |
-//             | GUI | B-T | SPC |   | ENT |     | ALT |
+//             | GUI |S-TAB| SPC |   | ENT |     | ALT |
                         bindings = <
    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
    &trans    &trans    &trans    &trans    &trans     &bt BT_CLR    &trans    &trans          &trans   &kp BSLH
