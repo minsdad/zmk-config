@@ -30,6 +30,21 @@
             key-positions = <27 28>;
             bindings = <&kp SEMI>;
         };
+        combo_closeWin {
+            timeout-ms = <80>;
+            key-positions = <28 29>;
+            bindings = <&kp LC(W)>;
+        };
+        combo_CapsLock {
+            timeout-ms = <80>;
+            key-positions = <10 11>;
+            bindings = <&kp CAPS>;
+        };
+        combo_Insert {
+            timeout-ms = <80>;
+            key-positions = <8 9>;
+            bindings = <&kp INS>;
+        };
         combo_leftchange {
             timeout-ms = <80>;
             key-positions = <12 13>;
@@ -44,6 +59,21 @@
             timeout-ms = <80>;
             key-positions = <14 15>;
             bindings = <&kp LG(TAB)>;
+        };
+        combo_Explorer {
+            timeout-ms = <80>;
+            key-positions = <18 19>;
+            bindings = <&kp LG(E)>;
+        };
+        combo_undo {
+            timeout-ms = <80>;
+            key-positions = <23 24>;
+            bindings = <&kp K_UNDO>;
+        };
+        combo_redo {
+            timeout-ms = <80>;
+            key-positions = <25 26>;
+            bindings = <&kp K_REDO>;
         };
         combo_BT1 {
             timeout-ms = <80>;
