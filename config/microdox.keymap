@@ -136,10 +136,10 @@
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
 //             | NUM | NAV | BKSP |   | SPC | SYM  | FUN |
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I &kp O &kp P
-   &hm LCTRL A &hm LGUI S &hm LALT D &hm LSHIFT F &kp G &kp H &hm LSHIFT J &hm LALT K &hm LGUI L &hm LCTRL RET
-   &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-        &mo 3 &mo 1 &kp BSPC    &kp SPACE &mo 2 &mo 4
+   &kp Q        &kp W       &kp E       &kp R       &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P
+   &hm LCTRL A  &hm LGUI S  &hm LALT D  &hm LSHIFT F    &kp G           &kp H   &hm LSHIFT J    &hm LALT K  &hm LGUI L  &hm LCTRL RET
+   &kp Z        &kp X       &kp C       &kp V       &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
+                            &mo 3       &mo 1       &kp BSPC            &kp SPACE   &mo 2       &mo 4
                         >;
                 };
                 nav_layer {
@@ -149,12 +149,13 @@
 // |alt-Z|alt-X|alt-C|alt-V|alt-B|   |     | PREV |  F5  | NEXT| menu |
 //             |     |     |     |   | KOR | TAB  | HANJA|
                         bindings = <
-   &kp LA(Q) &kp LA(W) &kp LA(E) &kp LA(R) &kp LA(T)    &trans &kp HOME &kp UP &kp END &kp PG_UP
-   &kp LA(A) &kp LA(S) &kp LA(D) &kp LA(F) &kp LA(G)    &trans &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN
-   &kp LA(Z) &kp LA(X) &kp LA(C) &kp LA(V) &kp LA(B)    &trans &kp LA(LEFT) &kp F5 &kp LA(RIGHT) &kp K_APPLICATION
-        &trans &trans &trans    &kp LANG_HANGEUL &kp TAB &kp LANG_HANJA
+   &kp LA(Q)    &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)           &trans      &kp HOME    &kp UP      &kp END     &kp PG_UP
+   &kp LA(A)    &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)           &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN
+   &kp LA(Z)    &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)           &trans      &kp LA(LEFT)  &kp F5    &kp LA(RIGHT)  &kp K_APPLICATION
+                            &trans      &trans      &trans              &kp LANG_HANGEUL &kp TAB &kp LANG_HANJA
                         >;
                 };
+
                 sym_layer {
 // -----------------------------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  ~  |  `  |
@@ -162,10 +163,10 @@
 // |  |  |     |  _  |  {  |  [  |   |  ]  |  }  |     |     |     |
 //             |     |S-TAB|     |   |     |     |     |
                         bindings = <
-   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT  &kp CARET &kp AMPS &kp ASTRK &kp TILDE &kp GRAVE
-   &kp BSLH &kp COLON &kp SQT &kp DQT &kp LPAR  &kp RPAR &trans &trans &trans &trans
-   &kp PIPE &trans &kp UNDER &kp LBRC &kp LBKT  &kp RBKT &kp RBRC &trans &trans &trans
-        &trans &kp LS(TAB) &trans   &trans &trans &trans
+   &kp EXCL     &kp AT      &kp HASH        &kp DLLR        &kp PRCNT         &kp CARET     &kp AMPS        &kp ASTRK       &kp TILDE       &kp GRAVE
+   &kp BSLH     &kp COLON   &kp SQT         &kp DQT         &kp LPAR          &kp RPAR      &trans          &trans          &trans          &trans
+   &kp PIPE     &trans      &kp UNDER       &kp LBRC        &kp LBKT          &kp RBKT      &kp RBRC        &trans          &trans          &trans
+                            &trans          &kp LS(TAB)     &trans            &trans        &trans          &trans
                         >;
                 };
 
@@ -173,28 +174,29 @@
 // Leaving it here for completeness.
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// |Ctr-Q|Ctr-W|Ctr-E|Ctr-R|Ctr-T|   |  =  |  7  |  8  |  9  |  *  |
-// |Ctr-A|Ctr-S|Ctr-D|Ctr-F|Ctr-G|   |  +  |  4  |  5  |  6  | ENT |
-// |Ctr-Z|Ctr-X|Ctr-C|Ctr-V|Ctr-B|   |  -  |  1  |  2  |  3  |  /  |
-//             |     |     |     |   | TAP |  0  |  .  |
+// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
+// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
+// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
+//             |     |     |     |   |  0  |  .  |  0  |
                         bindings = <
-   &kp LC(Q) &kp LC(W) &kp LC(E) &kp LC(R) &kp LC(T)    &kp EQUAL &kp N7 &kp N8 &kp N9 &kp ASTRK
-   &kp LC(A) &kp LC(S) &kp LC(D) &kp LC(F) &kp LC(G)    &kp PLUS &kp N4 &kp N5 &kp N6 &kp RET
-   &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(B)    &kp MINUS &kp N1 &kp N2 &kp N3 &kp FSLH
-        &trans &trans &trans    &kp TAP &kp N0 &kp DOT
+   &trans &trans &trans &trans &trans    &kp A  &kp N7  &kp N8 &kp N9 &kp D
+   &kp LC(A) &trans &trans &trans &trans    &kp B  &kp N4  &kp N5 &kp N6 &kp E
+   &trans &trans &trans &trans &trans    &kp C  &kp N1  &kp N2 &kp N3 &kp F
+                 &trans &trans &trans    &kp N0 &kp DOT &kp N0
                         >;
-                };                
+                };
+                
                 fun_layer {
 // -----------------------------------------------------------------------------------------
-// | F1  | F2  | F3  | F4  | PrSc|   | BT1 | BT2 | BT3 | BT4 | BT5 |
-// | F5  | F6  | F7  | F8  |     |   |BTclr|     |     |     |     |
-// | F9  | F10 | F11 | F12 |     |   |     |     |     |     |     |
-//             |     |     |     |   |     |     |     |
+// |BTCLR| BT3 | ESC |  ~   |     |   | DEL | HOME |  UP  | END | DEL  |
+// | BT1 | BT4 | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
+// | BT2 | BT5 |     |      |     |   |  \  | ENT  |      |     |      |
+//             |     |      |     |   | KOR | TAB  | HANJA|
                         bindings = <
-   &kp F1 &kp F2 &kp F3 &kp F4 &kp PRINTSCREEN  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-   &kp F5 &kp F6 &kp F7 &kp F8 &trans   &bt BT_CLR &trans &trans &trans &trans
-   &kp F9 &kp F10 &kp F11 &kp F12 &trans    &trans &trans &trans &trans &trans
-        &trans &trans &trans    &trans &trans &trans
+   &bt BT_CLR   &bt BT_SEL 3     &kp ESC  &kp TILDE &trans     &kp DEL  &kp HOME &kp UP   &kp END   &kp DEL
+   &bt BT_SEL 0 &bt BT_SEL 4 &kp RALT &kp LCTRL &mo 3      &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
+   &bt BT_SEL 1 &bt BT_SEL 5      &trans   &trans    &trans     &kp BSLH &kp RET  &trans   &trans    &trans
+                            &trans   &trans    &trans     &kp LANG_HANGEUL   &kp TAB   &kp LANG_HANJA
                         >;
                 };
         };
