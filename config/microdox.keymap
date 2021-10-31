@@ -74,6 +74,11 @@
         };
         combo_winTAB {
             timeout-ms = <30>;
+            key-positions = <16 17 18>;
+            bindings = <&kp LA(TAB)>;
+        };
+        combo_altTAB {
+            timeout-ms = <30>;
             key-positions = <14 15>;
             bindings = <&kp LG(TAB)>;
         };
