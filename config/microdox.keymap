@@ -174,15 +174,15 @@
 // Leaving it here for completeness.
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  EQ |  7  |  8  |  9  |  *  |
-// |     |     |     |     |     |   | PLUS|  4  |  5  |  6  | ENT |
-// |     |     |     |     |     |   |MINUS|  1  |  2  |  3  |SLASH|
-//             |     |     |     |   |  0  |  0  |  .  |
+// |Ctr-Q|Ctr-W|Ctr-E|Ctr-R|Ctr-T|   |  =  |  7  |  8  |  9  |  *  |
+// |Ctr-A|Ctr-S|Ctr-D|Ctr-F|Ctr-G|   |  +  |  4  |  5  |  6  | ENT |
+// |Ctr-Z|Ctr-X|Ctr-C|Ctr-V|Ctr-B|   |  -  |  1  |  2  |  3  |  /  |
+//             |     |     |     |   | TAB |  0  |  .  |
                         bindings = <
-   &trans &trans &trans &trans &trans    &kp EQUAL  &kp N7  &kp N8 &kp N9 &kp ASTRK
-   &kp LC(A) &trans &trans &trans &trans    &kp PLUS  &kp N4  &kp N5 &kp N6 &kp RET
-   &trans &trans &trans &trans &trans    &kp MINUS  &kp N1  &kp N2 &kp N3 &kp FSLH
-                 &trans &trans &trans    &kp N0 &kp N0 &kp DOT
+   &kp LC(Q) &kp LC(W) &kp LC(E) &kp LC(R) &kp LC(T)    &kp EQUAL  &kp N7  &kp N8 &kp N9 &kp ASTRK
+   &kp LC(A) &kp LC(S) &kp LC(D) &kp LC(F) &kp LC(G)    &kp PLUS  &kp N4  &kp N5 &kp N6 &kp RET
+   &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(B)    &kp MINUS  &kp N1  &kp N2 &kp N3 &kp FSLH
+                 &trans &trans &trans    &trans &kp N0 &kp DOT
                         >;
                 };
                 
