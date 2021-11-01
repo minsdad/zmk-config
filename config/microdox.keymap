@@ -50,7 +50,7 @@
         combo_closeWin {
             timeout-ms = <80>;
             key-positions = <28 29>;
-            bindings = <&kp LC(W)>;
+            bindings = <&kp LA(F4)>;
         };
         combo_CapsLock {
             timeout-ms = <30>;
