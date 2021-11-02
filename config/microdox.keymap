@@ -18,7 +18,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <750>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -28,103 +28,103 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <80>;
+            timeout-ms = <100>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
         combo_mute {
-            timeout-ms = <80>;
+            timeout-ms = <100>;
             key-positions = <3 4>;
             bindings = <&kp C_MUTE>;
         };
         combo_LGUI {
-            timeout-ms = <80>;
+            timeout-ms = <100>;
             key-positions = <20 21>;
             bindings = <&kp LGUI>;
         };
         combo_semicolon {
-            timeout-ms = <80>;
+            timeout-ms = <100>;
             key-positions = <27 28>;
             bindings = <&kp SEMI>;
         };
         combo_closeWin {
-            timeout-ms = <80>;
+            timeout-ms = <100>;
             key-positions = <28 29>;
             bindings = <&kp LA(F4)>;
         };
         combo_CapsLock {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <10 11>;
             bindings = <&kp CAPS>;
         };
         combo_Insert {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <8 9>;
             bindings = <&kp INS>;
         };
         combo_leftchange {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <12 13>;
             bindings = <&kp LC(LG(LEFT))>;
         };
         combo_rightchange {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <16 17>;
             bindings = <&kp LC(LG(RIGHT))>;
         };
         combo_winTAB {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <16 17 18>;
             bindings = <&kp LA(TAB)>;
         };
         combo_altTAB {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <14 15>;
             bindings = <&kp LG(TAB)>;
         };
         combo_Explorer {
-            timeout-ms = <80>;
+            timeout-ms = <100>;
             key-positions = <18 19>;
             bindings = <&kp LG(E)>;
         };
         combo_undo {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <23 24>;
             bindings = <&kp LC(Z)>;
         };
         combo_redo {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <25 26>;
             bindings = <&kp LS(LC(Z))>;
         };
         combo_BT1 {
-            timeout-ms = <80>;
-            key-positions = <5 29>;
+            timeout-ms = <100>;
+            key-positions = <0 24>;
             bindings = <&bt BT_SEL 0>;
         };
         combo_BT2 {
-            timeout-ms = <80>;
-            key-positions = <6 29>;
+            timeout-ms = <100>;
+            key-positions = <1 24>;
             bindings = <&bt BT_SEL 1>;
         };
         combo_BT3 {
-            timeout-ms = <80>;
-            key-positions = <7 29>;
+            timeout-ms = <100>;
+            key-positions = <2 24>;
             bindings = <&bt BT_SEL 2>;
         };
         combo_BT4 {
-            timeout-ms = <80>;
-            key-positions = <8 29>;
+            timeout-ms = <100>;
+            key-positions = <3 24>;
             bindings = <&bt BT_SEL 3>;
         };
         combo_BT5 {
-            timeout-ms = <80>;
-            key-positions = <9 29>;
+            timeout-ms = <100>;
+            key-positions = <4 24>;
             bindings = <&bt BT_SEL 4>;
         };
         combo_BTclr {
-            timeout-ms = <80>;
-            key-positions = <15 29>;
+            timeout-ms = <100>;
+            key-positions = <10 24>;
             bindings = <&bt BT_CLR>;
         };
     };
