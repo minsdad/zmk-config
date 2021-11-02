@@ -169,12 +169,12 @@
                 sym_layer {
 // -----------------------------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  ~  |  `  |
-// |  \  |  :  |  '  |  "  |  (  |   |  )  |     |     |     |     |
+// |  \  |  :  |  '  |  "  |  (  |   |  )  | LEFT| MUTE| RGT |     |
 // |  |  |     |  _  |  {  |  [  |   |  ]  |  }  |     |     |     |
 //             |     |S-TAB|     |   |     |     |     |
                         bindings = <
    &kp EXCL     &kp AT      &kp HASH        &kp DLLR        &kp PRCNT         &kp CARET     &kp AMPS        &kp ASTRK       &kp TILDE       &kp GRAVE
-   &kp BSLH     &kp COLON   &kp SQT         &kp DQT         &kp LPAR          &kp RPAR      &trans          &trans          &trans          &trans
+   &kp BSLH     &kp COLON   &kp SQT         &kp DQT         &kp LPAR          &kp RPAR      &kp LEFT        &kp C_MUTE      &kp RIGHT       &trans
    &kp PIPE     &trans      &kp UNDER       &kp LBRC        &kp LBKT          &kp RBKT      &kp RBRC        &trans          &trans          &trans
                             &trans          &kp LS(TAB)     &trans            &trans        &trans          &trans
                         >;
