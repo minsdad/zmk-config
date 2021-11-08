@@ -47,10 +47,10 @@
             key-positions = <8 9>;
             bindings = <&kp INS>;
         };        
-        combo_ctrl {
+        combo_alt {
             timeout-ms = <75>;
             key-positions = <10 11>;
-            bindings = <&kp LCTRL>;
+            bindings = <&kp LALT>;
         };        
         combo_TAB {
             timeout-ms = <75>;
@@ -72,10 +72,10 @@
             key-positions = <18 19>;
             bindings = <&kp LG(E)>;
         };
-        combo_win {
+        combo_ctrl {
             timeout-ms = <75>;
             key-positions = <20 21>;
-            bindings = <&kp LGUI>;
+            bindings = <&kp LCTRL>;
         };
         combo_undo {
             timeout-ms = <75>;
@@ -97,15 +97,15 @@
             key-positions = <28 29>;
             bindings = <&kp LA(F4)>;
         };
-        combo_Lalt {
+        combo_Lgui {
             timeout-ms = <75>;
             key-positions = <30 31>;
-            bindings = <&kp LALT>;
+            bindings = <&kp LGUI>;
         };
-        combo_Ralt {
+        combo_Rgui {
             timeout-ms = <75>;
             key-positions = <34 35>;
-            bindings = <&kp LALT>;
+            bindings = <&kp LGUI>;
         };
         combo_BT1 {
             timeout-ms = <75>;
