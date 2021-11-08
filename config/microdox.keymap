@@ -47,10 +47,10 @@
             key-positions = <8 9>;
             bindings = <&kp INS>;
         };        
-        combo_caps {
+        combo_ctrl {
             timeout-ms = <75>;
             key-positions = <10 11>;
-            bindings = <&kp CAPS>;
+            bindings = <&kp LCTRL>;
         };        
         combo_TAB {
             timeout-ms = <75>;
@@ -96,6 +96,16 @@
             timeout-ms = <75>;
             key-positions = <28 29>;
             bindings = <&kp LA(F4)>;
+        };
+        combo_Lalt {
+            timeout-ms = <75>;
+            key-positions = <30 31>;
+            bindings = <&kp LALT>;
+        };
+        combo_Ralt {
+            timeout-ms = <75>;
+            key-positions = <34 35>;
+            bindings = <&kp LALT>;
         };
         combo_BT1 {
             timeout-ms = <75>;
@@ -172,9 +182,9 @@
 //             | NUM | NAV | BKSP |   | SPC | SYM  | FUN |
                         bindings = <
    &kp Q        &kp W       &kp E       &kp R       &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P
-   &mt LGUI A        &mt LALT S       &mt LCTRL D       &mt LSHIFT F       &kp G        &kp H       &mt LSHIFT J       &mt LCTRL K       &mt LALT L       &mt LGUI RET
+   &kp A        &kp S       &kp D       &kp F       &kp G               &kp H       &kp J       &kp K       &kp L       &kp RET
    &kp Z        &kp X       &kp C       &kp V       &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
-                            &mo 3       &mo 1       &kp BSPC     &kp SPACE   &mo 2       &mo 4
+                            &mo 3       &mo 1       &mt LSHIFT BSPC     &mt LSHIFT SPACE   &mo 2       &mo 4
                         >;
                 };
                 nav_layer {
