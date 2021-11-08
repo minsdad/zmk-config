@@ -190,12 +190,12 @@
                 nav_layer {
 // -----------------------------------------------------------------------------------------
 // |alt-Q|alt-W|alt-E|alt-R|alt-T|   |     | HOME |  UP  | END | PGUP |
-// |A-Tab|alt-S|alt-D|alt-F|alt-G|   |     | LEFT | DOWN | RGT | PGDN |
+// |alt-A|alt-S|alt-D|alt-F|alt-G|   |     | LEFT | DOWN | RGT | PGDN |
 // |alt-Z|alt-X|alt-C|alt-V|alt-B|   |     | PREV |  F5  | NEXT| menu |
 //             |BTCLR|     |BTNXT|   | KOR | TAB  | HANJA|
                         bindings = <
    &kp LA(Q)    &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)           &trans      &kp HOME    &kp UP      &kp END     &kp PG_UP
-   &kp LA(TAB)    &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)           &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN
+   &kp LA(A)    &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)           &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN
    &kp LA(Z)    &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)           &trans      &kp LA(LEFT)  &kp F5    &kp LA(RIGHT)  &kp K_APPLICATION
                             &bt BT_CLR  &trans      &bt BT_NXT          &kp LANG_HANGEUL &kp TAB &kp LANG_HANJA
                         >;
