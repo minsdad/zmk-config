@@ -69,18 +69,18 @@
         };
         combo_leftchange {
             timeout-ms = <50>;
-            key-positions = <12 13>;
+            key-positions = <11 12 13>;
             bindings = <&kp LC(LG(LEFT))>;
         };
         combo_rightchange {
             timeout-ms = <50>;
-            key-positions = <16 17>;
+            key-positions = <16 17 18>;
             bindings = <&kp LC(LG(RIGHT))>;
         };
-        combo_altTAB {
+        combo_TAB {
             timeout-ms = <50>;
-            key-positions = <16 17 18>;
-            bindings = <&kp LA(TAB)>;
+            key-positions = <16 17>;
+            bindings = <&kp TAB>;
         };
         combo_winTAB {
             timeout-ms = <50>;
@@ -123,43 +123,43 @@
             bindings = <&bt BT_SEL 3>;
         };
         combo_BT5 {
-            timeout-ms = <100>;
+            timeout-ms = <125>;
             key-positions = <4 24>;
             bindings = <&bt BT_SEL 4>;
         };
         combo_BTclr {
-            timeout-ms = <100>;
+            timeout-ms = <125>;
             key-positions = <10 24>;
             bindings = <&bt BT_CLR>;
         };
         combo_BT_1 {
             timeout-ms = <100>;
-            key-positions = <0 24>;
+            key-positions = <5 25>;
             bindings = <&bt BT_SEL 0>;
         };
         combo_BT_2 {
             timeout-ms = <100>;
-            key-positions = <1 24>;
+            key-positions = <6 25>;
             bindings = <&bt BT_SEL 1>;
         };
         combo_BT_3 {
             timeout-ms = <100>;
-            key-positions = <2 24>;
+            key-positions = <7 25>;
             bindings = <&bt BT_SEL 2>;
         };
         combo_BT_4 {
             timeout-ms = <100>;
-            key-positions = <3 24>;
+            key-positions = <8 25>;
             bindings = <&bt BT_SEL 3>;
         };
         combo_BT_5 {
-            timeout-ms = <100>;
-            key-positions = <4 24>;
+            timeout-ms = <125>;
+            key-positions = <9 25>;
             bindings = <&bt BT_SEL 4>;
         };
         combo_BT_clr {
-            timeout-ms = <100>;
-            key-positions = <10 24>;
+            timeout-ms = <125>;
+            key-positions = <15 25>;
             bindings = <&bt BT_CLR>;
         };
     };
@@ -185,14 +185,14 @@
                 nav_layer {
 // -----------------------------------------------------------------------------------------
 // |alt-Q|alt-W|alt-E|alt-R|alt-T|   |     | HOME |  UP  | END | PGUP |
-// |alt-A|alt-S|alt-D|alt-F|alt-G|   |     | LEFT | DOWN | RGT | PGDN |
+// |A-Tab|alt-S|alt-D|alt-F|alt-G|   |     | LEFT | DOWN | RGT | PGDN |
 // |alt-Z|alt-X|alt-C|alt-V|alt-B|   |     | PREV |  F5  | NEXT| menu |
-//             |     |     |     |   | KOR | TAB  | HANJA|
+//             |BTCLR|     |BTNXT|   | KOR | TAB  | HANJA|
                         bindings = <
    &kp LA(Q)    &kp LA(W)   &kp LA(E)   &kp LA(R)   &kp LA(T)           &trans      &kp HOME    &kp UP      &kp END     &kp PG_UP
-   &kp LA(A)    &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)           &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN
+   &kp LA(TAB)    &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)           &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN
    &kp LA(Z)    &kp LA(X)   &kp LA(C)   &kp LA(V)   &kp LA(B)           &trans      &kp LA(LEFT)  &kp F5    &kp LA(RIGHT)  &kp K_APPLICATION
-                            &trans      &trans      &trans              &kp LANG_HANGEUL &kp TAB &kp LANG_HANJA
+                            &bt BT_CLR  &trans      &bt BT_NXT          &kp LANG_HANGEUL &kp TAB &kp LANG_HANJA
                         >;
                 };
 
