@@ -103,7 +103,7 @@
             bindings = <&kp LGUI>;
         };
         combo_Rgui {
-            timeout-ms = <75>;
+            timeout-ms = <74>;
             key-positions = <34 35>;
             bindings = <&kp LGUI>;
         };
